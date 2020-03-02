@@ -12,7 +12,7 @@ def hello_world():
         try:
             """
             Call your predict function
-            Recommended to import the method recently.
+            Recommended to import the function to use.
             """
             return jsonify({
                 "status": "Success",
