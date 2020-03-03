@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import jsonify, request
+from flask_cors import CORS
 
 
 app = Flask(__name__)
@@ -44,4 +45,5 @@ def hello_world():
 
 
 if __name__ == "__main__":
-    app.run(host="localhost", port=8080)
+    CORS(app)
+    app.run(host="localhost", port=8888)
